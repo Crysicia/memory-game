@@ -1,0 +1,28 @@
+<%
+  images_url = [
+    "ace_of_hearts",
+    "2_of_hearts",
+    "3_of_hearts",
+    "4_of_hearts",
+    "5_of_hearts",
+    "6_of_hearts",
+    "7_of_hearts",
+    "8_of_hearts",
+    "9_of_hearts",
+    "10_of_hearts",
+    "jack_of_hearts2",
+    "queen_of_hearts2",
+    "king_of_hearts2",
+  ]
+%>
+
+<button type="button" class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <%= image_tag("card-back", alt: "Card back") %>
+    </div>
+    <div class="flip-card-back">
+      <%= image_tag(images_url[value], alt: "Card #{value}") %>
+    </div>
+  </div>
+</button>
