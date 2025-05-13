@@ -19,6 +19,7 @@ function addCard(value) {
   const newCard = document.createElement('button');
   newCard.type = 'button';
   newCard.classList.add('flip-card');
+  newCard.dataset.controller = 'card';
   newCard.innerHTML = `
     <div class="flip-card-inner">
       <div class="flip-card-front">
